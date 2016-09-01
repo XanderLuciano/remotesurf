@@ -1,2 +1,2 @@
-# verisurf
-Basic Example Programs for the Verisurf API
+# RemoteSurf
+Basic Example Programs for the Verisurf API written in C#
