@@ -77,6 +77,9 @@
             this.CommandText = new System.Windows.Forms.TextBox();
             this.SendButton = new System.Windows.Forms.Button();
             this.ConnectButton = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.RefreshRateNum = new System.Windows.Forms.NumericUpDown();
+            this.label5 = new System.Windows.Forms.Label();
             this.OrientationGroup.SuspendLayout();
             this.LiveReportGroup.SuspendLayout();
             this.DeviationGroup.SuspendLayout();
@@ -84,6 +87,7 @@
             this.MeasureGroup.SuspendLayout();
             this.CADViewGroup.SuspendLayout();
             this.ConnectionGroup.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.RefreshRateNum)).BeginInit();
             this.SuspendLayout();
             // 
             // OrientationGroup
@@ -93,7 +97,7 @@
             this.OrientationGroup.Controls.Add(this.button2);
             this.OrientationGroup.Controls.Add(this.button3);
             this.OrientationGroup.Controls.Add(this.button4);
-            this.OrientationGroup.Location = new System.Drawing.Point(180, 158);
+            this.OrientationGroup.Location = new System.Drawing.Point(180, 162);
             this.OrientationGroup.Name = "OrientationGroup";
             this.OrientationGroup.Size = new System.Drawing.Size(177, 127);
             this.OrientationGroup.TabIndex = 2;
@@ -151,6 +155,8 @@
             // LiveReportGroup
             // 
             this.LiveReportGroup.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.LiveReportGroup.Controls.Add(this.label5);
+            this.LiveReportGroup.Controls.Add(this.RefreshRateNum);
             this.LiveReportGroup.Controls.Add(this.RefreshButton);
             this.LiveReportGroup.Controls.Add(this.deviation_progress);
             this.LiveReportGroup.Controls.Add(this.total_deviation);
@@ -171,7 +177,7 @@
             this.RefreshButton.Location = new System.Drawing.Point(150, 36);
             this.RefreshButton.Name = "RefreshButton";
             this.RefreshButton.Size = new System.Drawing.Size(55, 23);
-            this.RefreshButton.TabIndex = 6;
+            this.RefreshButton.TabIndex = 2;
             this.RefreshButton.Text = "Refresh";
             this.RefreshButton.UseVisualStyleBackColor = true;
             this.RefreshButton.Click += new System.EventHandler(this.RefreshButton_Clicked);
@@ -184,6 +190,7 @@
             this.deviation_progress.Name = "deviation_progress";
             this.deviation_progress.Size = new System.Drawing.Size(134, 23);
             this.deviation_progress.Step = 1;
+            this.deviation_progress.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
             this.deviation_progress.TabIndex = 5;
             this.deviation_progress.Value = 250;
             // 
@@ -215,7 +222,7 @@
             this.DeviationGroup.Location = new System.Drawing.Point(18, 123);
             this.DeviationGroup.Name = "DeviationGroup";
             this.DeviationGroup.Size = new System.Drawing.Size(324, 52);
-            this.DeviationGroup.TabIndex = 3;
+            this.DeviationGroup.TabIndex = 5;
             this.DeviationGroup.TabStop = false;
             this.DeviationGroup.Text = "Deviation";
             // 
@@ -257,7 +264,7 @@
             this.NominalGroup.Location = new System.Drawing.Point(18, 65);
             this.NominalGroup.Name = "NominalGroup";
             this.NominalGroup.Size = new System.Drawing.Size(324, 52);
-            this.NominalGroup.TabIndex = 2;
+            this.NominalGroup.TabIndex = 4;
             this.NominalGroup.TabStop = false;
             this.NominalGroup.Text = "Nominal";
             // 
@@ -299,6 +306,7 @@
             this.ActiveDeviceCombo.Name = "ActiveDeviceCombo";
             this.ActiveDeviceCombo.Size = new System.Drawing.Size(125, 21);
             this.ActiveDeviceCombo.TabIndex = 1;
+            this.ActiveDeviceCombo.SelectedIndexChanged += new System.EventHandler(this.ActiveDevice_Changed);
             // 
             // label1
             // 
@@ -473,7 +481,7 @@
             this.CADViewGroup.Controls.Add(this.button19);
             this.CADViewGroup.Controls.Add(this.button22);
             this.CADViewGroup.Controls.Add(this.button20);
-            this.CADViewGroup.Location = new System.Drawing.Point(363, 158);
+            this.CADViewGroup.Location = new System.Drawing.Point(363, 162);
             this.CADViewGroup.Name = "CADViewGroup";
             this.CADViewGroup.Size = new System.Drawing.Size(177, 127);
             this.CADViewGroup.TabIndex = 3;
@@ -556,6 +564,7 @@
             // 
             this.ConnectionGroup.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ConnectionGroup.BackColor = System.Drawing.SystemColors.Window;
+            this.ConnectionGroup.Controls.Add(this.label3);
             this.ConnectionGroup.Controls.Add(this.ErrorLabel);
             this.ConnectionGroup.Controls.Add(this.label6);
             this.ConnectionGroup.Controls.Add(this.ConnectionStatus);
@@ -565,7 +574,7 @@
             this.ConnectionGroup.Controls.Add(this.ConnectButton);
             this.ConnectionGroup.Location = new System.Drawing.Point(180, 6);
             this.ConnectionGroup.Name = "ConnectionGroup";
-            this.ConnectionGroup.Size = new System.Drawing.Size(360, 144);
+            this.ConnectionGroup.Size = new System.Drawing.Size(360, 148);
             this.ConnectionGroup.TabIndex = 0;
             this.ConnectionGroup.TabStop = false;
             this.ConnectionGroup.Text = "Connection";
@@ -573,7 +582,7 @@
             // ErrorLabel
             // 
             this.ErrorLabel.AutoSize = true;
-            this.ErrorLabel.Location = new System.Drawing.Point(6, 84);
+            this.ErrorLabel.Location = new System.Drawing.Point(6, 95);
             this.ErrorLabel.Name = "ErrorLabel";
             this.ErrorLabel.Size = new System.Drawing.Size(35, 13);
             this.ErrorLabel.TabIndex = 3;
@@ -582,7 +591,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 67);
+            this.label6.Location = new System.Drawing.Point(6, 78);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(54, 13);
             this.label6.TabIndex = 2;
@@ -593,7 +602,7 @@
             this.ConnectionStatus.AutoSize = true;
             this.ConnectionStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ConnectionStatus.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ConnectionStatus.Location = new System.Drawing.Point(43, 48);
+            this.ConnectionStatus.Location = new System.Drawing.Point(43, 59);
             this.ConnectionStatus.Name = "ConnectionStatus";
             this.ConnectionStatus.Size = new System.Drawing.Size(103, 16);
             this.ConnectionStatus.TabIndex = 1;
@@ -602,7 +611,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 50);
+            this.label4.Location = new System.Drawing.Point(6, 61);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(40, 13);
             this.label4.TabIndex = 0;
@@ -610,14 +619,14 @@
             // 
             // CommandText
             // 
-            this.CommandText.Location = new System.Drawing.Point(9, 20);
+            this.CommandText.Location = new System.Drawing.Point(9, 35);
             this.CommandText.Name = "CommandText";
             this.CommandText.Size = new System.Drawing.Size(264, 20);
             this.CommandText.TabIndex = 5;
             // 
             // SendButton
             // 
-            this.SendButton.Location = new System.Drawing.Point(279, 19);
+            this.SendButton.Location = new System.Drawing.Point(279, 34);
             this.SendButton.Name = "SendButton";
             this.SendButton.Size = new System.Drawing.Size(75, 22);
             this.SendButton.TabIndex = 6;
@@ -628,13 +637,55 @@
             // ConnectButton
             // 
             this.ConnectButton.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ConnectButton.Location = new System.Drawing.Point(6, 106);
+            this.ConnectButton.Location = new System.Drawing.Point(6, 114);
             this.ConnectButton.Name = "ConnectButton";
             this.ConnectButton.Size = new System.Drawing.Size(142, 27);
             this.ConnectButton.TabIndex = 4;
             this.ConnectButton.Text = "Connect";
             this.ConnectButton.UseVisualStyleBackColor = false;
             this.ConnectButton.Click += new System.EventHandler(this.Connect_Clicked);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 19);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(56, 13);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "User Input";
+            // 
+            // RefreshRateNum
+            // 
+            this.RefreshRateNum.Increment = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.RefreshRateNum.Location = new System.Drawing.Point(237, 39);
+            this.RefreshRateNum.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.RefreshRateNum.Name = "RefreshRateNum";
+            this.RefreshRateNum.Size = new System.Drawing.Size(105, 20);
+            this.RefreshRateNum.TabIndex = 3;
+            this.RefreshRateNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.RefreshRateNum.Value = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.RefreshRateNum.ValueChanged += new System.EventHandler(this.RefreshRate_Changed);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(234, 23);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(92, 13);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Refresh Rate (ms)";
             // 
             // RemoteSurf
             // 
@@ -667,6 +718,7 @@
             this.CADViewGroup.ResumeLayout(false);
             this.ConnectionGroup.ResumeLayout(false);
             this.ConnectionGroup.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.RefreshRateNum)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -721,6 +773,9 @@
         private System.Windows.Forms.Label ConnectionStatus;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button RefreshButton;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.NumericUpDown RefreshRateNum;
+        private System.Windows.Forms.Label label5;
     }
 }
 

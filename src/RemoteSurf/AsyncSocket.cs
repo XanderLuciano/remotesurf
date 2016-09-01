@@ -9,15 +9,27 @@ using System.Threading.Tasks;
 
 namespace RemoteSurf
 {
+    /// <summary>
+    /// Async Wrapper for TCPclient to allow proper async usage.
+    /// </summary>
     public class AsyncSocket
     {
         private TcpClient m_client;
         private NetworkStream m_stream;
         private StreamReader m_reader;
 
+        /// <summary>
+        /// TCPclient timeout in ms
+        /// </summary>
         public int timeout = 5000;
+        /// <summary>
+        /// Are we currently connected to the Versisurf API server?
+        /// </summary>
         public bool connected;
 
+        /// <summary>
+        /// Creates a new AsyncSocket and sets the timeout (default 5 seconds)
+        /// </summary>
         public AsyncSocket()
         {
             m_client = new TcpClient();
@@ -26,6 +38,12 @@ namespace RemoteSurf
             connected = false;
         }
 
+        /// <summary>
+        /// Attempt to create a TCP socket connection
+        /// </summary>
+        /// <param name="hostIP">IP of the server</param>
+        /// <param name="hostPort">Port server</param>
+        /// <returns>true if connection was successful, false if connection failed</returns>
         public async Task<bool> Connect(string hostIP, int hostPort)
         {
             try
@@ -49,12 +67,20 @@ namespace RemoteSurf
             return connected;
         }
 
+        /// <summary>
+        /// Disconnect from the socket
+        /// </summary>
         public void Disconnect()
         {
             m_client.Close();
             connected = false;
         }
 
+        /// <summary>
+        /// Send data to socket asynchronously
+        /// </summary>
+        /// <param name="data">string to send to socket</param>
+        /// <returns>Task</returns>
         public async Task SendAsync(string data)
         {
             if (!connected)
@@ -71,6 +97,10 @@ namespace RemoteSurf
             }
         }
 
+        /// <summary>
+        /// Reads a line from the active socket connection asynchronously.
+        /// </summary>
+        /// <returns>recieved data as string</returns>
         public async Task<string> ReadLineAsync()
         {
             byte[] data = new byte[2048];
