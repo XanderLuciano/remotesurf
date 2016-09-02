@@ -67,8 +67,8 @@ namespace RemoteSurf
                     ConnectionStatus.ForeColor = Color.LimeGreen;
                     ConnectButton.Text = "Disconnect";
                     await client.SendAsync("<device_list />");
-                    var uselessvariable1 = ReceiveDataAsync();
-                    var uselessvariable2 = GetDeviceInfoAsync();
+                    var rcvdata = ReceiveDataAsync();
+                    var getdevinfo = GetDeviceInfoAsync();
                 }
                 else
                 {
@@ -163,7 +163,7 @@ namespace RemoteSurf
             XmlNode node = xml["response"].SelectSingleNode("error");
             if (node != null)
             {
-                ErrorLabel.Text = $"Error: {node["code"].InnerText} - {node["name"].InnerText}";
+                ErrorLabel.Text = $"Error: { node["code"].InnerText } - { node["name"].InnerText }";
                 return;
             }
 
