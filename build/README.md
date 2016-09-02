@@ -1,0 +1,1 @@
+This is a standalone application for testing the Verisurf API server.
