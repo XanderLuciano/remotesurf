@@ -1,7 +1,7 @@
 # RemoteSurf
 Basic Example Programs for the Verisurf API written in C#
 
-Latest Version: [v1.0 - 2016.09.02][release]
+Latest Version: [v1.0 - 2016.09.02][dl]
 
 ---
 
@@ -24,5 +24,5 @@ RemoteSurf is a standalone application that requires .NET 4.5 or higher.
  - Improve documentation
  - Improve UI
 
-[release]<https://github.com/XanderLuciano/remotesurf/releases>
+[dl]:<https://github.com/XanderLuciano/remotesurf/releases>
 [api]:<https://github.com/verisurf/verisurf-api>
