@@ -155,9 +155,7 @@ namespace RemoteSurf
             // Check that we have a valid response and load it
             if (string.IsNullOrWhiteSpace(xmlresponse))
                 return;
-
-            //Console.WriteLine(xmlresponse);
-
+            
             XmlDocument xml = new XmlDocument();
             xml.LoadXml(xmlresponse);
 
