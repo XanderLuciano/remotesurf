@@ -3,7 +3,7 @@
 
 Request an updated device list
 
-**Namespace:**&nbsp;<a href="Documentation.md">RemoteSurf</a><br />**Assembly:**&nbsp;RemoteSurf (in RemoteSurf.exe) Version: 1.0.0.0 (1.0.0.0)
+**Namespace:**&nbsp;<a href="N_RemoteSurf">RemoteSurf</a><br />**Assembly:**&nbsp;RemoteSurf (in RemoteSurf.exe) Version: 1.0.0.0 (1.0.0.0)
 
 ## Syntax
 
@@ -23,4 +23,4 @@ private void RefreshButton_Clicked(
 
 
 #### Reference
-<a href="Documentation.md">RemoteSurf Class</a><br /><a href="Documentation.md">RemoteSurf Namespace</a><br />
+<a href="T_RemoteSurf_RemoteSurf">RemoteSurf Class</a><br /><a href="N_RemoteSurf">RemoteSurf Namespace</a><br />
