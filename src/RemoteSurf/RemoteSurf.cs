@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
 
+/// <summary>
+/// A WinForms example program to show how to use the Verisurf API with an async C# client.
+/// </summary>
 namespace RemoteSurf
 {
     /// <summary>
