@@ -1,5 +1,5 @@
 # RemoteSurf.InitializeComponent Method 
- _**\[This is preliminary documentation and is subject to change.\]**_
+ 
 
 Required method for Designer support - do not modify the contents of this method with the code editor.
 

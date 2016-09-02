@@ -1,5 +1,5 @@
 # AsyncSocket.connected Field
- _**\[This is preliminary documentation and is subject to change.\]**_
+ 
 
 Are we currently connected to the Versisurf API server?
 
@@ -14,7 +14,7 @@ public bool connected
 
 
 #### Field Value
-Type: <a href="http://msdn2.microsoft.com/en-us/library/a28wyd50" target="_self">Boolean</a>
+Type: <a href="http://msdn2.microsoft.com/en-us/library/a28wyd50" target="_blank">Boolean</a>
 
 ## See Also
 

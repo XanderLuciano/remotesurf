@@ -1,5 +1,5 @@
 # RemoteSurf.RefreshRateNum Field
- _**\[This is preliminary documentation and is subject to change.\]**_
+ 
 
 \[Missing <summary> documentation for "F:RemoteSurf.RemoteSurf.RefreshRateNum"\]
 
@@ -14,7 +14,7 @@ private NumericUpDown RefreshRateNum
 
 
 #### Field Value
-Type: <a href="http://msdn2.microsoft.com/en-us/library/kdt55f0b" target="_self">NumericUpDown</a>
+Type: <a href="http://msdn2.microsoft.com/en-us/library/kdt55f0b" target="_blank">NumericUpDown</a>
 
 ## See Also
 

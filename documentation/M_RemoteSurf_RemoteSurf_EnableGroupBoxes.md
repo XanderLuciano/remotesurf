@@ -1,5 +1,5 @@
 # RemoteSurf.EnableGroupBoxes Method 
- _**\[This is preliminary documentation and is subject to change.\]**_
+ 
 
 Function to quickly enable/disable all relevent group boxes.
 
@@ -16,7 +16,7 @@ private void EnableGroupBoxes(
 
 
 #### Parameters
-&nbsp;<dl><dt>enabled</dt><dd>Type: <a href="http://msdn2.microsoft.com/en-us/library/a28wyd50" target="_self">System.Boolean</a><br />Enabled group boxes?</dd></dl>
+&nbsp;<dl><dt>enabled</dt><dd>Type: <a href="http://msdn2.microsoft.com/en-us/library/a28wyd50" target="_blank">System.Boolean</a><br />Enabled group boxes?</dd></dl>
 
 ## See Also
 

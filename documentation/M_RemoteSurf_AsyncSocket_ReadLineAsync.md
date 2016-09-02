@@ -1,5 +1,5 @@
 # AsyncSocket.ReadLineAsync Method 
- _**\[This is preliminary documentation and is subject to change.\]**_
+ 
 
 Reads a line from the active socket connection asynchronously.
 
@@ -14,7 +14,7 @@ public Task<string> ReadLineAsync()
 
 
 #### Return Value
-Type: <a href="http://msdn2.microsoft.com/en-us/library/dd321424" target="_self">Task</a>(<a href="http://msdn2.microsoft.com/en-us/library/s1wwdcbf" target="_self">String</a>)<br />recieved data as string
+Type: <a href="http://msdn2.microsoft.com/en-us/library/dd321424" target="_blank">Task</a>(<a href="http://msdn2.microsoft.com/en-us/library/s1wwdcbf" target="_blank">String</a>)<br />recieved data as string
 
 ## See Also
 

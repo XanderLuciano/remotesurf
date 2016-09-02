@@ -1,5 +1,5 @@
 # RemoteSurf.SphereButton Field
- _**\[This is preliminary documentation and is subject to change.\]**_
+ 
 
 \[Missing <summary> documentation for "F:RemoteSurf.RemoteSurf.SphereButton"\]
 
@@ -14,7 +14,7 @@ private Button SphereButton
 
 
 #### Field Value
-Type: <a href="http://msdn2.microsoft.com/en-us/library/031c58k4" target="_self">Button</a>
+Type: <a href="http://msdn2.microsoft.com/en-us/library/031c58k4" target="_blank">Button</a>
 
 ## See Also
 

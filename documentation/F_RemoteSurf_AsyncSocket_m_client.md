@@ -1,5 +1,5 @@
 # AsyncSocket.m_client Field
- _**\[This is preliminary documentation and is subject to change.\]**_
+ 
 
 \[Missing <summary> documentation for "F:RemoteSurf.AsyncSocket.m_client"\]
 
@@ -14,7 +14,7 @@ private TcpClient m_client
 
 
 #### Field Value
-Type: <a href="http://msdn2.microsoft.com/en-us/library/1612451t" target="_self">TcpClient</a>
+Type: <a href="http://msdn2.microsoft.com/en-us/library/1612451t" target="_blank">TcpClient</a>
 
 ## See Also
 

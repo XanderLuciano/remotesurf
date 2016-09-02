@@ -1,5 +1,5 @@
 # AsyncSocket.m_reader Field
- _**\[This is preliminary documentation and is subject to change.\]**_
+ 
 
 \[Missing <summary> documentation for "F:RemoteSurf.AsyncSocket.m_reader"\]
 
@@ -14,7 +14,7 @@ private StreamReader m_reader
 
 
 #### Field Value
-Type: <a href="http://msdn2.microsoft.com/en-us/library/6aetdk20" target="_self">StreamReader</a>
+Type: <a href="http://msdn2.microsoft.com/en-us/library/6aetdk20" target="_blank">StreamReader</a>
 
 ## See Also
 

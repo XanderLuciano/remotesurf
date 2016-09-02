@@ -1,5 +1,5 @@
 # AsyncSocket.Connect Method 
- _**\[This is preliminary documentation and is subject to change.\]**_
+ 
 
 Attempt to create a TCP socket connection
 
@@ -17,10 +17,10 @@ public Task<bool> Connect(
 
 
 #### Parameters
-&nbsp;<dl><dt>hostIP</dt><dd>Type: <a href="http://msdn2.microsoft.com/en-us/library/s1wwdcbf" target="_self">System.String</a><br />IP of the server</dd><dt>hostPort</dt><dd>Type: <a href="http://msdn2.microsoft.com/en-us/library/td2s409d" target="_self">System.Int32</a><br />Port server</dd></dl>
+&nbsp;<dl><dt>hostIP</dt><dd>Type: <a href="http://msdn2.microsoft.com/en-us/library/s1wwdcbf" target="_blank">System.String</a><br />IP of the server</dd><dt>hostPort</dt><dd>Type: <a href="http://msdn2.microsoft.com/en-us/library/td2s409d" target="_blank">System.Int32</a><br />Port server</dd></dl>
 
 #### Return Value
-Type: <a href="http://msdn2.microsoft.com/en-us/library/dd321424" target="_self">Task</a>(<a href="http://msdn2.microsoft.com/en-us/library/a28wyd50" target="_self">Boolean</a>)<br />true if connection was successful, false if connection failed
+Type: <a href="http://msdn2.microsoft.com/en-us/library/dd321424" target="_blank">Task</a>(<a href="http://msdn2.microsoft.com/en-us/library/a28wyd50" target="_blank">Boolean</a>)<br />true if connection was successful, false if connection failed
 
 ## See Also
 

@@ -1,5 +1,5 @@
 # AsyncSocket.SendAsync Method 
- _**\[This is preliminary documentation and is subject to change.\]**_
+ 
 
 Send data to socket asynchronously
 
@@ -16,10 +16,10 @@ public Task SendAsync(
 
 
 #### Parameters
-&nbsp;<dl><dt>data</dt><dd>Type: <a href="http://msdn2.microsoft.com/en-us/library/s1wwdcbf" target="_self">System.String</a><br />string to send to socket</dd></dl>
+&nbsp;<dl><dt>data</dt><dd>Type: <a href="http://msdn2.microsoft.com/en-us/library/s1wwdcbf" target="_blank">System.String</a><br />string to send to socket</dd></dl>
 
 #### Return Value
-Type: <a href="http://msdn2.microsoft.com/en-us/library/dd235678" target="_self">Task</a><br />Task
+Type: <a href="http://msdn2.microsoft.com/en-us/library/dd235678" target="_blank">Task</a><br />Task
 
 ## See Also
 

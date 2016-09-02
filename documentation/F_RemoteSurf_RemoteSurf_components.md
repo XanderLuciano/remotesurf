@@ -1,5 +1,5 @@
 # RemoteSurf.components Field
- _**\[This is preliminary documentation and is subject to change.\]**_
+ 
 
 Required designer variable.
 
@@ -14,7 +14,7 @@ private IContainer components
 
 
 #### Field Value
-Type: <a href="http://msdn2.microsoft.com/en-us/library/z7xdfy67" target="_self">IContainer</a>
+Type: <a href="http://msdn2.microsoft.com/en-us/library/z7xdfy67" target="_blank">IContainer</a>
 
 ## See Also
 

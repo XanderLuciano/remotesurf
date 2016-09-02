@@ -1,5 +1,5 @@
 # RemoteSurf.MeasureGroup Field
- _**\[This is preliminary documentation and is subject to change.\]**_
+ 
 
 \[Missing <summary> documentation for "F:RemoteSurf.RemoteSurf.MeasureGroup"\]
 
@@ -14,7 +14,7 @@ private GroupBox MeasureGroup
 
 
 #### Field Value
-Type: <a href="http://msdn2.microsoft.com/en-us/library/31a073x1" target="_self">GroupBox</a>
+Type: <a href="http://msdn2.microsoft.com/en-us/library/31a073x1" target="_blank">GroupBox</a>
 
 ## See Also
 

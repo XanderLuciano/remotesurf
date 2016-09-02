@@ -1,5 +1,5 @@
 # RemoteSurf.refreshRate Field
- _**\[This is preliminary documentation and is subject to change.\]**_
+ 
 
 \[Missing <summary> documentation for "F:RemoteSurf.RemoteSurf.refreshRate"\]
 
@@ -14,7 +14,7 @@ private int refreshRate
 
 
 #### Field Value
-Type: <a href="http://msdn2.microsoft.com/en-us/library/td2s409d" target="_self">Int32</a>
+Type: <a href="http://msdn2.microsoft.com/en-us/library/td2s409d" target="_blank">Int32</a>
 
 ## See Also
 

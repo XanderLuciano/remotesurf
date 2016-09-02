@@ -1,5 +1,5 @@
 # RemoteSurf.ActiveDevice_Changed Method 
- _**\[This is preliminary documentation and is subject to change.\]**_
+ 
 
 Changes the active device ID
 
@@ -17,7 +17,7 @@ private void ActiveDevice_Changed(
 
 
 #### Parameters
-&nbsp;<dl><dt>sender</dt><dd>Type: <a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_self">System.Object</a><br />\[Missing <param name="sender"/> documentation for "M:RemoteSurf.RemoteSurf.ActiveDevice_Changed(System.Object,System.EventArgs)"\]</dd><dt>e</dt><dd>Type: <a href="http://msdn2.microsoft.com/en-us/library/118wxtk3" target="_self">System.EventArgs</a><br />\[Missing <param name="e"/> documentation for "M:RemoteSurf.RemoteSurf.ActiveDevice_Changed(System.Object,System.EventArgs)"\]</dd></dl>
+&nbsp;<dl><dt>sender</dt><dd>Type: <a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">System.Object</a><br />\[Missing <param name="sender"/> documentation for "M:RemoteSurf.RemoteSurf.ActiveDevice_Changed(System.Object,System.EventArgs)"\]</dd><dt>e</dt><dd>Type: <a href="http://msdn2.microsoft.com/en-us/library/118wxtk3" target="_blank">System.EventArgs</a><br />\[Missing <param name="e"/> documentation for "M:RemoteSurf.RemoteSurf.ActiveDevice_Changed(System.Object,System.EventArgs)"\]</dd></dl>
 
 ## See Also
 

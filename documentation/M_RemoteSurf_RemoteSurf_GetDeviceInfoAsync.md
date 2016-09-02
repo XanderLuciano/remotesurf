@@ -1,5 +1,5 @@
 # RemoteSurf.GetDeviceInfoAsync Method 
- _**\[This is preliminary documentation and is subject to change.\]**_
+ 
 
 Async task loop to request device info at the current refresh rate.
 
@@ -14,7 +14,7 @@ private Task GetDeviceInfoAsync()
 
 
 #### Return Value
-Type: <a href="http://msdn2.microsoft.com/en-us/library/dd235678" target="_self">Task</a><br />Task
+Type: <a href="http://msdn2.microsoft.com/en-us/library/dd235678" target="_blank">Task</a><br />Task
 
 ## See Also
 

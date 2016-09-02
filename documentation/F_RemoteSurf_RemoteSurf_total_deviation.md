@@ -1,5 +1,5 @@
 # RemoteSurf.total_deviation Field
- _**\[This is preliminary documentation and is subject to change.\]**_
+ 
 
 \[Missing <summary> documentation for "F:RemoteSurf.RemoteSurf.total_deviation"\]
 
@@ -14,7 +14,7 @@ private Label total_deviation
 
 
 #### Field Value
-Type: <a href="http://msdn2.microsoft.com/en-us/library/cca0ee09" target="_self">Label</a>
+Type: <a href="http://msdn2.microsoft.com/en-us/library/cca0ee09" target="_blank">Label</a>
 
 ## See Also
 

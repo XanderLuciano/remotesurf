@@ -1,5 +1,5 @@
 # RemoteSurf.ParseResponseAsync Method 
- _**\[This is preliminary documentation and is subject to change.\]**_
+ 
 
 Parse the XML response from the Verisurf API server.
 
@@ -16,7 +16,7 @@ private void ParseResponseAsync(
 
 
 #### Parameters
-&nbsp;<dl><dt>xmlresponse</dt><dd>Type: <a href="http://msdn2.microsoft.com/en-us/library/s1wwdcbf" target="_self">System.String</a><br />Verisurf API response</dd></dl>
+&nbsp;<dl><dt>xmlresponse</dt><dd>Type: <a href="http://msdn2.microsoft.com/en-us/library/s1wwdcbf" target="_blank">System.String</a><br />Verisurf API response</dd></dl>
 
 ## Remarks
 Properly intercepts errors, Sends filtered XML data to UI Updating functions
