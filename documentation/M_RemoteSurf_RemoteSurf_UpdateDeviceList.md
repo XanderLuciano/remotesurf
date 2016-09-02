@@ -1,5 +1,5 @@
 # RemoteSurf.UpdateDeviceList Method 
- 
+ _**\[This is preliminary documentation and is subject to change.\]**_
 
 Updates Active Device UI combo box
 
@@ -16,7 +16,7 @@ private void UpdateDeviceList(
 
 
 #### Parameters
-&nbsp;<dl><dt>devices</dt><dd>Type: <a href="http://msdn2.microsoft.com/en-us/library/9abwaty7" target="_blank">System.Xml.XmlNodeList</a><br />Verisurf API response with filtered available devices XML string</dd></dl>
+&nbsp;<dl><dt>devices</dt><dd>Type: <a href="http://msdn2.microsoft.com/en-us/library/9abwaty7" target="_self">System.Xml.XmlNodeList</a><br />Verisurf API response with filtered available devices XML string</dd></dl>
 
 ## See Also
 

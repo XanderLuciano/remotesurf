@@ -1,5 +1,5 @@
 # RemoteSurf.ActiveDeviceCombo Field
- 
+ _**\[This is preliminary documentation and is subject to change.\]**_
 
 \[Missing <summary> documentation for "F:RemoteSurf.RemoteSurf.ActiveDeviceCombo"\]
 
@@ -14,7 +14,7 @@ private ComboBox ActiveDeviceCombo
 
 
 #### Field Value
-Type: <a href="http://msdn2.microsoft.com/en-us/library/t14e0ws8" target="_blank">ComboBox</a>
+Type: <a href="http://msdn2.microsoft.com/en-us/library/t14e0ws8" target="_self">ComboBox</a>
 
 ## See Also
 

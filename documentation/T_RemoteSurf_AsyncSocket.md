@@ -1,11 +1,11 @@
 # AsyncSocket Class
- 
+ _**\[This is preliminary documentation and is subject to change.\]**_
 
 Async Wrapper for TCPclient to allow proper async usage.
 
 
 ## Inheritance Hierarchy
-<a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">System.Object</a><br />&nbsp;&nbsp;RemoteSurf.AsyncSocket<br />
+<a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_self">System.Object</a><br />&nbsp;&nbsp;RemoteSurf.AsyncSocket<br />
 **Namespace:**&nbsp;<a href="N_RemoteSurf">RemoteSurf</a><br />**Assembly:**&nbsp;RemoteSurf (in RemoteSurf.exe) Version: 1.0.0.0 (1.0.0.0)
 
 ## Syntax

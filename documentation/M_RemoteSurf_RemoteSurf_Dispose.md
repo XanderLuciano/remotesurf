@@ -1,5 +1,5 @@
 # RemoteSurf.Dispose Method 
- 
+ _**\[This is preliminary documentation and is subject to change.\]**_
 
 Clean up any resources being used.
 
@@ -16,7 +16,7 @@ protected override void Dispose(
 
 
 #### Parameters
-&nbsp;<dl><dt>disposing</dt><dd>Type: <a href="http://msdn2.microsoft.com/en-us/library/a28wyd50" target="_blank">System.Boolean</a><br />true if managed resources should be disposed; otherwise, false.</dd></dl>
+&nbsp;<dl><dt>disposing</dt><dd>Type: <a href="http://msdn2.microsoft.com/en-us/library/a28wyd50" target="_self">System.Boolean</a><br />true if managed resources should be disposed; otherwise, false.</dd></dl>
 
 ## See Also
 

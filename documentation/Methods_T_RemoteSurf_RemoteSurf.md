@@ -1,5 +1,5 @@
 # RemoteSurf Methods
- 
+ _**\[This is preliminary documentation and is subject to change.\]**_
 
 The <a href="T_RemoteSurf_RemoteSurf">RemoteSurf</a> type exposes the following members.
 
@@ -10,7 +10,7 @@ Changes the active device ID</td></tr><tr><td>![Private method](media/privmethod
 Send the corresponding CADView command to the Verisurf API server</td></tr><tr><td>![Private method](media/privmethod.gif "Private method")</td><td><a href="M_RemoteSurf_RemoteSurf_Connect_Clicked">Connect_Clicked</a></td><td>
 Attempt to connect to Verisurf</td></tr><tr><td>![Protected method](media/protmethod.gif "Protected method")</td><td><a href="M_RemoteSurf_RemoteSurf_Dispose">Dispose</a></td><td>
 Clean up any resources being used.
- (Overrides <a href="http://msdn2.microsoft.com/en-us/library/aw58wzka" target="_blank">Form.Dispose(Boolean)</a>.)</td></tr><tr><td>![Private method](media/privmethod.gif "Private method")</td><td><a href="M_RemoteSurf_RemoteSurf_EnableGroupBoxes">EnableGroupBoxes</a></td><td>
+ (Overrides <a href="http://msdn2.microsoft.com/en-us/library/aw58wzka" target="_self">Form.Dispose(Boolean)</a>.)</td></tr><tr><td>![Private method](media/privmethod.gif "Private method")</td><td><a href="M_RemoteSurf_RemoteSurf_EnableGroupBoxes">EnableGroupBoxes</a></td><td>
 Function to quickly enable/disable all relevent group boxes.</td></tr><tr><td>![Private method](media/privmethod.gif "Private method")</td><td><a href="M_RemoteSurf_RemoteSurf_FormLoad">FormLoad</a></td><td>
 Sets the default states for the form</td></tr><tr><td>![Private method](media/privmethod.gif "Private method")</td><td><a href="M_RemoteSurf_RemoteSurf_GetDeviceInfoAsync">GetDeviceInfoAsync</a></td><td>
 Async task loop to request device info at the current refresh rate.</td></tr><tr><td>![Private method](media/privmethod.gif "Private method")</td><td><a href="M_RemoteSurf_RemoteSurf_InitializeComponent">InitializeComponent</a></td><td>

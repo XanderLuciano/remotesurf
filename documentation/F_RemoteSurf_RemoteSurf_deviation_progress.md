@@ -1,5 +1,5 @@
 # RemoteSurf.deviation_progress Field
- 
+ _**\[This is preliminary documentation and is subject to change.\]**_
 
 \[Missing <summary> documentation for "F:RemoteSurf.RemoteSurf.deviation_progress"\]
 
@@ -14,7 +14,7 @@ private ProgressBar deviation_progress
 
 
 #### Field Value
-Type: <a href="http://msdn2.microsoft.com/en-us/library/de047043" target="_blank">ProgressBar</a>
+Type: <a href="http://msdn2.microsoft.com/en-us/library/de047043" target="_self">ProgressBar</a>
 
 ## See Also
 

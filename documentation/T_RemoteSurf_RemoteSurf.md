@@ -1,11 +1,11 @@
 # RemoteSurf Class
- 
+ _**\[This is preliminary documentation and is subject to change.\]**_
 
 WinForm events and code
 
 
 ## Inheritance Hierarchy
-<a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">System.Object</a><br />&nbsp;&nbsp;<a href="http://msdn2.microsoft.com/en-us/library/w4302s1f" target="_blank">System.MarshalByRefObject</a><br />&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://msdn2.microsoft.com/en-us/library/9wbadbce" target="_blank">System.ComponentModel.Component</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://msdn2.microsoft.com/en-us/library/36cd312w" target="_blank">System.Windows.Forms.Control</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://msdn2.microsoft.com/en-us/library/7xhk8yhk" target="_blank">System.Windows.Forms.ScrollableControl</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://msdn2.microsoft.com/en-us/library/e7d2a552" target="_blank">System.Windows.Forms.ContainerControl</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://msdn2.microsoft.com/en-us/library/w4bcxb43" target="_blank">System.Windows.Forms.Form</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RemoteSurf.RemoteSurf<br />
+<a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_self">System.Object</a><br />&nbsp;&nbsp;<a href="http://msdn2.microsoft.com/en-us/library/w4302s1f" target="_self">System.MarshalByRefObject</a><br />&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://msdn2.microsoft.com/en-us/library/9wbadbce" target="_self">System.ComponentModel.Component</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://msdn2.microsoft.com/en-us/library/36cd312w" target="_self">System.Windows.Forms.Control</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://msdn2.microsoft.com/en-us/library/7xhk8yhk" target="_self">System.Windows.Forms.ScrollableControl</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://msdn2.microsoft.com/en-us/library/e7d2a552" target="_self">System.Windows.Forms.ContainerControl</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://msdn2.microsoft.com/en-us/library/w4bcxb43" target="_self">System.Windows.Forms.Form</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RemoteSurf.RemoteSurf<br />
 **Namespace:**&nbsp;<a href="N_RemoteSurf">RemoteSurf</a><br />**Assembly:**&nbsp;RemoteSurf (in RemoteSurf.exe) Version: 1.0.0.0 (1.0.0.0)
 
 ## Syntax
@@ -29,7 +29,7 @@ Changes the active device ID</td></tr><tr><td>![Private method](media/privmethod
 Send the corresponding CADView command to the Verisurf API server</td></tr><tr><td>![Private method](media/privmethod.gif "Private method")</td><td><a href="M_RemoteSurf_RemoteSurf_Connect_Clicked">Connect_Clicked</a></td><td>
 Attempt to connect to Verisurf</td></tr><tr><td>![Protected method](media/protmethod.gif "Protected method")</td><td><a href="M_RemoteSurf_RemoteSurf_Dispose">Dispose</a></td><td>
 Clean up any resources being used.
- (Overrides <a href="http://msdn2.microsoft.com/en-us/library/aw58wzka" target="_blank">Form.Dispose(Boolean)</a>.)</td></tr><tr><td>![Private method](media/privmethod.gif "Private method")</td><td><a href="M_RemoteSurf_RemoteSurf_EnableGroupBoxes">EnableGroupBoxes</a></td><td>
+ (Overrides <a href="http://msdn2.microsoft.com/en-us/library/aw58wzka" target="_self">Form.Dispose(Boolean)</a>.)</td></tr><tr><td>![Private method](media/privmethod.gif "Private method")</td><td><a href="M_RemoteSurf_RemoteSurf_EnableGroupBoxes">EnableGroupBoxes</a></td><td>
 Function to quickly enable/disable all relevent group boxes.</td></tr><tr><td>![Private method](media/privmethod.gif "Private method")</td><td><a href="M_RemoteSurf_RemoteSurf_FormLoad">FormLoad</a></td><td>
 Sets the default states for the form</td></tr><tr><td>![Private method](media/privmethod.gif "Private method")</td><td><a href="M_RemoteSurf_RemoteSurf_GetDeviceInfoAsync">GetDeviceInfoAsync</a></td><td>
 Async task loop to request device info at the current refresh rate.</td></tr><tr><td>![Private method](media/privmethod.gif "Private method")</td><td><a href="M_RemoteSurf_RemoteSurf_InitializeComponent">InitializeComponent</a></td><td>

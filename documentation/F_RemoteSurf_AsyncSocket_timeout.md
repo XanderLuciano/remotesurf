@@ -1,5 +1,5 @@
 # AsyncSocket.timeout Field
- 
+ _**\[This is preliminary documentation and is subject to change.\]**_
 
 TCPclient timeout in ms
 
@@ -14,7 +14,7 @@ public int timeout
 
 
 #### Field Value
-Type: <a href="http://msdn2.microsoft.com/en-us/library/td2s409d" target="_blank">Int32</a>
+Type: <a href="http://msdn2.microsoft.com/en-us/library/td2s409d" target="_self">Int32</a>
 
 ## See Also
 

@@ -35,6 +35,8 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.LiveReportGroup = new System.Windows.Forms.GroupBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.RefreshRateNum = new System.Windows.Forms.NumericUpDown();
             this.RefreshButton = new System.Windows.Forms.Button();
             this.deviation_progress = new System.Windows.Forms.ProgressBar();
             this.total_deviation = new System.Windows.Forms.Label();
@@ -70,6 +72,7 @@
             this.button22 = new System.Windows.Forms.Button();
             this.button20 = new System.Windows.Forms.Button();
             this.ConnectionGroup = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.ErrorLabel = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.ConnectionStatus = new System.Windows.Forms.Label();
@@ -77,17 +80,14 @@
             this.CommandText = new System.Windows.Forms.TextBox();
             this.SendButton = new System.Windows.Forms.Button();
             this.ConnectButton = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.RefreshRateNum = new System.Windows.Forms.NumericUpDown();
-            this.label5 = new System.Windows.Forms.Label();
             this.OrientationGroup.SuspendLayout();
             this.LiveReportGroup.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.RefreshRateNum)).BeginInit();
             this.DeviationGroup.SuspendLayout();
             this.NominalGroup.SuspendLayout();
             this.MeasureGroup.SuspendLayout();
             this.CADViewGroup.SuspendLayout();
             this.ConnectionGroup.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.RefreshRateNum)).BeginInit();
             this.SuspendLayout();
             // 
             // OrientationGroup
@@ -171,6 +171,39 @@
             this.LiveReportGroup.TabIndex = 4;
             this.LiveReportGroup.TabStop = false;
             this.LiveReportGroup.Text = "Live Report";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(234, 23);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(92, 13);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Refresh Rate (ms)";
+            // 
+            // RefreshRateNum
+            // 
+            this.RefreshRateNum.Increment = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.RefreshRateNum.Location = new System.Drawing.Point(237, 39);
+            this.RefreshRateNum.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.RefreshRateNum.Name = "RefreshRateNum";
+            this.RefreshRateNum.Size = new System.Drawing.Size(105, 20);
+            this.RefreshRateNum.TabIndex = 3;
+            this.RefreshRateNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.RefreshRateNum.Value = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.RefreshRateNum.ValueChanged += new System.EventHandler(this.RefreshRate_Changed);
             // 
             // RefreshButton
             // 
@@ -266,7 +299,7 @@
             this.NominalGroup.Size = new System.Drawing.Size(324, 52);
             this.NominalGroup.TabIndex = 4;
             this.NominalGroup.TabStop = false;
-            this.NominalGroup.Text = "Nominal";
+            this.NominalGroup.Text = "Measured";
             // 
             // nom_x
             // 
@@ -579,6 +612,15 @@
             this.ConnectionGroup.TabStop = false;
             this.ConnectionGroup.Text = "Connection";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 19);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(56, 13);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "User Input";
+            // 
             // ErrorLabel
             // 
             this.ErrorLabel.AutoSize = true;
@@ -645,48 +687,6 @@
             this.ConnectButton.UseVisualStyleBackColor = false;
             this.ConnectButton.Click += new System.EventHandler(this.Connect_Clicked);
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 19);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 13);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "User Input";
-            // 
-            // RefreshRateNum
-            // 
-            this.RefreshRateNum.Increment = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
-            this.RefreshRateNum.Location = new System.Drawing.Point(237, 39);
-            this.RefreshRateNum.Maximum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            0});
-            this.RefreshRateNum.Name = "RefreshRateNum";
-            this.RefreshRateNum.Size = new System.Drawing.Size(105, 20);
-            this.RefreshRateNum.TabIndex = 3;
-            this.RefreshRateNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.RefreshRateNum.Value = new decimal(new int[] {
-            100,
-            0,
-            0,
-            0});
-            this.RefreshRateNum.ValueChanged += new System.EventHandler(this.RefreshRate_Changed);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(234, 23);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(92, 13);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Refresh Rate (ms)";
-            // 
             // RemoteSurf
             // 
             this.AcceptButton = this.SendButton;
@@ -710,6 +710,7 @@
             this.OrientationGroup.ResumeLayout(false);
             this.LiveReportGroup.ResumeLayout(false);
             this.LiveReportGroup.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.RefreshRateNum)).EndInit();
             this.DeviationGroup.ResumeLayout(false);
             this.DeviationGroup.PerformLayout();
             this.NominalGroup.ResumeLayout(false);
@@ -718,7 +719,6 @@
             this.CADViewGroup.ResumeLayout(false);
             this.ConnectionGroup.ResumeLayout(false);
             this.ConnectionGroup.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.RefreshRateNum)).EndInit();
             this.ResumeLayout(false);
 
         }

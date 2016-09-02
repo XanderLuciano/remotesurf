@@ -1,5 +1,5 @@
 # AsyncSocket Fields
- 
+ _**\[This is preliminary documentation and is subject to change.\]**_
 
 The <a href="T_RemoteSurf_AsyncSocket">AsyncSocket</a> type exposes the following members.
 

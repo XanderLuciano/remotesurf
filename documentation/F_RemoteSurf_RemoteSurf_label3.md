@@ -1,5 +1,5 @@
 # RemoteSurf.label3 Field
- 
+ _**\[This is preliminary documentation and is subject to change.\]**_
 
 \[Missing <summary> documentation for "F:RemoteSurf.RemoteSurf.label3"\]
 
@@ -14,7 +14,7 @@ private Label label3
 
 
 #### Field Value
-Type: <a href="http://msdn2.microsoft.com/en-us/library/cca0ee09" target="_blank">Label</a>
+Type: <a href="http://msdn2.microsoft.com/en-us/library/cca0ee09" target="_self">Label</a>
 
 ## See Also
 

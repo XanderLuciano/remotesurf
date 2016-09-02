@@ -1,5 +1,5 @@
 # RemoteSurf.MeasureButton_Clicked Method 
- 
+ _**\[This is preliminary documentation and is subject to change.\]**_
 
 Send the corresponding measure command the the Verisurf API server
 
@@ -17,7 +17,7 @@ private void MeasureButton_Clicked(
 
 
 #### Parameters
-&nbsp;<dl><dt>sender</dt><dd>Type: <a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">System.Object</a><br />Measure Button Pressed</dd><dt>e</dt><dd>Type: <a href="http://msdn2.microsoft.com/en-us/library/118wxtk3" target="_blank">System.EventArgs</a><br />\[Missing <param name="e"/> documentation for "M:RemoteSurf.RemoteSurf.MeasureButton_Clicked(System.Object,System.EventArgs)"\]</dd></dl>
+&nbsp;<dl><dt>sender</dt><dd>Type: <a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_self">System.Object</a><br />Measure Button Pressed</dd><dt>e</dt><dd>Type: <a href="http://msdn2.microsoft.com/en-us/library/118wxtk3" target="_self">System.EventArgs</a><br />\[Missing <param name="e"/> documentation for "M:RemoteSurf.RemoteSurf.MeasureButton_Clicked(System.Object,System.EventArgs)"\]</dd></dl>
 
 ## See Also
 

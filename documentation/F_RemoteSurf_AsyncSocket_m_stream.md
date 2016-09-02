@@ -1,5 +1,5 @@
 # AsyncSocket.m_stream Field
- 
+ _**\[This is preliminary documentation and is subject to change.\]**_
 
 \[Missing <summary> documentation for "F:RemoteSurf.AsyncSocket.m_stream"\]
 
@@ -14,7 +14,7 @@ private NetworkStream m_stream
 
 
 #### Field Value
-Type: <a href="http://msdn2.microsoft.com/en-us/library/z2xae4f4" target="_blank">NetworkStream</a>
+Type: <a href="http://msdn2.microsoft.com/en-us/library/z2xae4f4" target="_self">NetworkStream</a>
 
 ## See Also
 

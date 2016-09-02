@@ -1,5 +1,5 @@
 # AsyncSocket Constructor 
- 
+ _**\[This is preliminary documentation and is subject to change.\]**_
 
 Creates a new AsyncSocket and sets the timeout (default 5 seconds)
 

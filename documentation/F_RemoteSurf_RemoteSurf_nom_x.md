@@ -1,5 +1,5 @@
 # RemoteSurf.nom_x Field
- 
+ _**\[This is preliminary documentation and is subject to change.\]**_
 
 \[Missing <summary> documentation for "F:RemoteSurf.RemoteSurf.nom_x"\]
 
@@ -14,7 +14,7 @@ private TextBox nom_x
 
 
 #### Field Value
-Type: <a href="http://msdn2.microsoft.com/en-us/library/48deaakc" target="_blank">TextBox</a>
+Type: <a href="http://msdn2.microsoft.com/en-us/library/48deaakc" target="_self">TextBox</a>
 
 ## See Also
 
