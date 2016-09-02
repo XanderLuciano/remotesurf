@@ -1,9 +1,9 @@
 # RemoteSurf.UpdateDeviceInfo Method 
- 
+ _**\[This is preliminary documentation and is subject to change.\]**_
 
 Updates All UI elements that report device info.
 
-**Namespace:**&nbsp;<a href="N_RemoteSurf">RemoteSurf</a><br />**Assembly:**&nbsp;RemoteSurf (in RemoteSurf.exe) Version: 1.0.0.0 (1.0.0.0)
+**Namespace:**&nbsp;<a href="Documentation.md">RemoteSurf</a><br />**Assembly:**&nbsp;RemoteSurf (in RemoteSurf.exe) Version: 1.0.0.0 (1.0.0.0)
 
 ## Syntax
 
@@ -16,10 +16,10 @@ private void UpdateDeviceInfo(
 
 
 #### Parameters
-&nbsp;<dl><dt>info</dt><dd>Type: <a href="http://msdn2.microsoft.com/en-us/library/bxz4hfh3" target="_blank">System.Xml.XmlNode</a><br />Verisurf API response with filtered device info XML string</dd></dl>
+&nbsp;<dl><dt>info</dt><dd>Type: <a href="http://msdn2.microsoft.com/en-us/library/bxz4hfh3" target="_self">System.Xml.XmlNode</a><br />Verisurf API response with filtered device info XML string</dd></dl>
 
 ## See Also
 
 
 #### Reference
-<a href="T_RemoteSurf_RemoteSurf">RemoteSurf Class</a><br /><a href="N_RemoteSurf">RemoteSurf Namespace</a><br />
+<a href="Documentation.md">RemoteSurf Class</a><br /><a href="Documentation.md">RemoteSurf Namespace</a><br />

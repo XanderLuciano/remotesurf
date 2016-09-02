@@ -1,9 +1,9 @@
 # AsyncSocket.m_stream Field
- 
+ _**\[This is preliminary documentation and is subject to change.\]**_
 
 \[Missing <summary> documentation for "F:RemoteSurf.AsyncSocket.m_stream"\]
 
-**Namespace:**&nbsp;<a href="N_RemoteSurf">RemoteSurf</a><br />**Assembly:**&nbsp;RemoteSurf (in RemoteSurf.exe) Version: 1.0.0.0 (1.0.0.0)
+**Namespace:**&nbsp;<a href="Documentation.md">RemoteSurf</a><br />**Assembly:**&nbsp;RemoteSurf (in RemoteSurf.exe) Version: 1.0.0.0 (1.0.0.0)
 
 ## Syntax
 
@@ -14,10 +14,10 @@ private NetworkStream m_stream
 
 
 #### Field Value
-Type: <a href="http://msdn2.microsoft.com/en-us/library/z2xae4f4" target="_blank">NetworkStream</a>
+Type: <a href="http://msdn2.microsoft.com/en-us/library/z2xae4f4" target="_self">NetworkStream</a>
 
 ## See Also
 
 
 #### Reference
-<a href="T_RemoteSurf_AsyncSocket">AsyncSocket Class</a><br /><a href="N_RemoteSurf">RemoteSurf Namespace</a><br />
+<a href="Documentation.md">AsyncSocket Class</a><br /><a href="Documentation.md">RemoteSurf Namespace</a><br />
