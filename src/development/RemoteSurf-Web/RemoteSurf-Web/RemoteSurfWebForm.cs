@@ -55,5 +55,10 @@ namespace RemoteSurf
         {
             browser.ShowDevTools();
         }
+
+        private void Resized(object sender, EventArgs e)
+        {
+            Console.WriteLine(this.Size);
+        }
     }
 }
