@@ -1,4 +1,4 @@
-![Verisurf Logo](https://github.com/XanderLuciano/remotesurf/tree/master/src/Verisurf2017icon_32.png) 
+![Verisurf Logo](https://github.com/XanderLuciano/remotesurf/raw/master/src/Verisurf2017icon_32.png) 
 # RemoteSurf
 Basic Example Programs for the Verisurf API written in C#
 
