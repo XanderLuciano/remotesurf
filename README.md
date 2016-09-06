@@ -1,4 +1,4 @@
-# RemoteSurf
+[Verisurf Logo](https://github.com/XanderLuciano/remotesurf/tree/master/src/verisurf2017icon.png) # RemoteSurf
 Basic Example Programs for the Verisurf API written in C#
 
 Latest Version: [v1.0 - 2016.09.02][dl]
