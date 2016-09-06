@@ -1,6 +1,10 @@
-var websocket;
-var timer;
+// The intervalrate in ms
+var refreshRate = 250;
 
+// This can be toggled in the console to output debug info
+var debug = false;
+
+// HTML element variables
 var verisurf_x = $("#x_measured");
 var verisurf_y = $("#y_measured");
 var verisurf_z = $("#z_measured");
@@ -11,33 +15,49 @@ var verisurf_d3 = $("#d3_measured");
 var verisurf_px = $("#x_nominal");
 var verisurf_py = $("#y_nominal");
 var verisurf_pz = $("#z_nominal");
+var measure = $("#measure");
 var device = $("#device");
 
+// other variables
 var deviceID = 0;
+var websocket;
+var timer;
 
-function DeviceChanged()
-{
-	deviceID = device.val();
+// Function called when dropdown is changed
+function DeviceChanged() {
+    deviceID = device.val();
 }
 
+measure.click(function() {
+    sendCommand("build");
+    console.log("Build clicked");
+});
+
+function sendCommand(command)  {
+    websocket.send("<"+command+" />\n");
+    console.log("Command: "+command);
+}
+
+// Sends command to retrieve current device info
 function socketTimerCallback() {
     websocket.send("<device_info id='" + deviceID + "' />\n");
 }
 
+// Checks if the current value is zero or null
 function ifNullZero(value) {
     if (value == null)
-        return 0;
+        return "0.0000";
     else
         return parseFloat(value).toFixed(4);
 }
 
 $(function () {
-	websocket = new WebSocket("ws://localhost:6734");
+    websocket = new WebSocket("ws://localhost:6734");
 
     websocket.onopen = function (event) {
         timer = setInterval(function () {
             socketTimerCallback();
-        }, 250);
+        }, refreshRate);
     };
 
     websocket.onmessage = function (event) {
@@ -59,7 +79,8 @@ $(function () {
 
             verisurf_d3.text(ifNullZero(info[0].getAttribute("D3")));
         }
-        console.log(event.data);
+        if (debug)
+            console.log(event.data);
     };
 
     websocket.onclose = function (event) {

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,72 +18,91 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-<section class="intro">
-    <div class="intro-body">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1 class="brand-heading">RemoteSurf Web</h1>
-                    <h3>
-                        <span>Select Device:
-                            <select id="device" onchange="DeviceChanged()">
-                                <option value="0">0 - Mouse</option>
-                                <option value="1">1 - Other</option>
-                            </select>
-                        </span>
-                    </h3>
-                    <p>
-                    <table class="table">
-                        <thead>
-                        <tr>
-                            <th></th>
-                            <th>Nominal</th>
-                            <th>Measured</th>
-                            <th>Deviation</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>X</td>
-                            <td id="x_nominal">0</td>
-                            <td id="x_measured">0</td>
-                            <td id="x_deviation">0</td>
-                        </tr>
-                        <tr>
-                            <td>Y</td>
-                            <td id="y_nominal">0</td>
-                            <td id="y_measured">0</td>
-                            <td id="y_deviation">0</td>
-                        </tr>
-                        <tr>
-                            <td>Z</td>
-                            <td id="z_nominal">0</td>
-                            <td id="z_measured">0</td>
-                            <td id="z_deviation">0</td>
-                        </tr>
-                        <tr>
-                            <td>3D</td>
-                            <td></td>
-                            <td></td>
-                            <td id="d3_measured">0</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                    </p>
+
+    <!-- Page Content -->
+    <div class="content-wrapper">
+        <div id="menu-button" onclick="toggleMenu()"></div>
+        <section class="intro">
+            <div class="intro-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1 class="brand-heading">RemoteSurf Web</h1>
+                            <h3>
+                            <span>Select Device:
+                                <select id="device" onchange="DeviceChanged()">
+                                    <option value="0">0 - Mouse</option>
+                                    <option value="1">1 - Other</option>
+                                </select>
+                            </span>
+                            </h3>
+                            <p>
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Nominal</th>
+                                    <th>Measured</th>
+                                    <th>Deviation</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>X</td>
+                                    <td id="x_nominal">0</td>
+                                    <td id="x_measured">0</td>
+                                    <td id="x_deviation">0</td>
+                                </tr>
+                                <tr>
+                                    <td>Y</td>
+                                    <td id="y_nominal">0</td>
+                                    <td id="y_measured">0</td>
+                                    <td id="y_deviation">0</td>
+                                </tr>
+                                <tr>
+                                    <td>Z</td>
+                                    <td id="z_nominal">0</td>
+                                    <td id="z_measured">0</td>
+                                    <td id="z_deviation">0</td>
+                                </tr>
+                                <tr>
+                                    <td>3D</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td id="d3_measured">0</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
     </div>
-</section>
 
-<div id="fullscreen" onclick="winform.toggleFullScreen()"></div>
+    <!-- Off canvas menu -->
+    <div id="menu-wrapper">
+        <nav class="menu">
+            <div class="close-menu" onclick="toggleMenu()"><i class="fa fa-times"></i></div>
+            <div class="items">
+                <a href="#" id="measure"><i class="fa fa-fw fa-crosshairs"></i><span> Measure </span></a>
+                <a href="#" id="CADView"><i class="fa fa-fw fa-cube"></i><span> CAD View </span></a>
+                <a href="#" id="device"><i class="fa fa-fw fa-cog"></i><span> Settings </span></a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- floating buttons -->
+    <div id="fullscreen" onclick="toggleFullScreen(); winform.toggleFullScreen(); "></div>
 
 <!-- Core JavaScript Files -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 <!-- Font Awesome -->
 <script src="https://use.fontawesome.com/d665a94f5a.js"></script>
-<!-- Custom Theme JavaScript -->
-<script src="script.js"></script>
+<!-- JavaScript Files -->
+<script src="main.js"></script>
+<script src="verisurf-api.js"></script>
 </body>
 </html>
