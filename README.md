@@ -1,5 +1,5 @@
-![Verisurf Logo](https://github.com/XanderLuciano/remotesurf/raw/master/src/Verisurf2017icon_32.png) 
-# RemoteSurf
+![RemoteSurf](https://github.com/XanderLuciano/remotesurf/raw/master/src/RemoteSurfBanner.png) 
+
 Basic Example Programs for the Verisurf API written in C#
 
 Latest Version: [v1.0 - 2016.09.02][dl]
