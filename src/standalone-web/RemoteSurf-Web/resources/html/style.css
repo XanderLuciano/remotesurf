@@ -126,7 +126,7 @@ table td {
 
 .intro {
     display: table;
-    width: 110%;
+    width: 120%;
     transform: translateX(-10%);
     height: auto;
     padding: 100px 0;
