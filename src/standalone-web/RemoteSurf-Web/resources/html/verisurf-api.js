@@ -87,7 +87,7 @@ $(function () {
                 if (name == "")
                     elem.hide();
                 else
-                    elem.show().html('<a href="#" onclick="setDevice(0)"><i class="fa fa-exchange"></i> ' + name + ' </a>');
+                    elem.show().html('<a href="#" onclick="setDevice(' + i + ')"><i class="fa fa-exchange"></i> ' + name + ' </a>');
             }
         }
         if (debug)
