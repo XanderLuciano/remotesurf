@@ -2,18 +2,57 @@
 var menu = $("#menu-wrapper");
 var content = $(".content-wrapper");
 
+// Menu Items
+var measure = $("#measure");
+var measureMenu = $(".measure-menu");
+var cadview = $("#cadview");
+var cadviewMenu = $(".cadview-menu");
+var settings = $("#settings");
+var settingsMenu = $(".settings-menu");
+
 var isShown = false;
 
-content.click(function(e) {
-    if(isShown && e.target.id != "menu-button"){
+content.click(function (e) {
+    if (isShown && e.target.id != "menu-button") {
         toggleMenu();
-        console.log("hiding menu");
-        console.log(e.target.id);
     }
 });
 
-function toggleMenu(){
-    if (!isShown){
+measure.click(function () {
+    if (measureMenu.hasClass("show")) {
+        measureMenu.removeClass("show");
+        measure.children(".fa-chevron-up").removeClass("rotate-180");
+    }
+    else {
+        measureMenu.addClass("show");
+        measure.children(".fa-chevron-up").addClass("rotate-180");
+    }
+});
+
+cadview.click(function () {
+    if (cadviewMenu.hasClass("show")) {
+        cadviewMenu.removeClass("show");
+        cadview.children(".fa-chevron-up").removeClass("rotate-180");
+    }
+    else {
+        cadviewMenu.addClass("show");
+        cadview.children(".fa-chevron-up").addClass("rotate-180");
+    }
+});
+
+settings.click(function () {
+    if (settingsMenu.hasClass("show")) {
+        settingsMenu.removeClass("show");
+        settings.children(".fa-chevron-up").removeClass("rotate-180");
+    }
+    else {
+        settingsMenu.addClass("show");
+        settings.children(".fa-chevron-up").addClass("rotate-180");
+    }
+});
+
+function toggleMenu() {
+    if (!isShown) {
         menu.addClass("show-menu");
         content.addClass("show-menu");
     }

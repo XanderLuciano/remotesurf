@@ -15,7 +15,6 @@ var verisurf_d3 = $("#d3_measured");
 var verisurf_px = $("#x_nominal");
 var verisurf_py = $("#y_nominal");
 var verisurf_pz = $("#z_nominal");
-var measure = $("#measure");
 var device = $("#device");
 
 // other variables
@@ -28,14 +27,9 @@ function DeviceChanged() {
     deviceID = device.val();
 }
 
-measure.click(function() {
-    sendCommand("build");
-    console.log("Build clicked");
-});
-
-function sendCommand(command)  {
-    websocket.send("<"+command+" />\n");
-    console.log("Command: "+command);
+function sendCommand(command) {
+    websocket.send("<" + command + " />\n");
+    console.log("Command: " + command);
 }
 
 // Sends command to retrieve current device info

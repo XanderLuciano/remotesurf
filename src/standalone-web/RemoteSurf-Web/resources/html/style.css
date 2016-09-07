@@ -6,7 +6,7 @@ body {
     background-color: #000;
 	
 	overflow:hidden;
-    background: url(background.jpg) no-repeat center center scroll;
+    background: url(http://xanderluciano.com/remotesurf/background.jpg) no-repeat center center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -110,13 +110,24 @@ table td {
     }
 }
 
+/* Animated 180 rotation */
+.rotate {
+    transform: rotate(0deg);
+    transition: transform .3s;
+}
+
+.rotate-180 {
+    transform: rotate(180deg);
+}
+
 .content-wrapper {
     height: 100%;
 }
 
 .intro {
     display: table;
-    width: 100%;
+    width: 110%;
+    transform: translateX(-10%);
     height: auto;
     padding: 100px 0;
     text-align: center;
@@ -194,6 +205,9 @@ table td {
         display: block;
         color: #eee;
         padding: .25em;
+    }
+
+    #menu-wrapper .items > a {
         font-size: x-large;
     }
 
@@ -210,11 +224,11 @@ table td {
     }
 
     #menu-wrapper .items a:nth-child(1) { transition-delay: .3s; }
-    #menu-wrapper .items a:nth-child(2) { transition-delay: .2s; }
-    #menu-wrapper .items a:nth-child(3) { transition-delay: .1s; }
+    #menu-wrapper .items a:nth-child(3) { transition-delay: .2s; }
+    #menu-wrapper .items a:nth-child(5) { transition-delay: .1s; }
     #menu-wrapper.show-menu .items a:nth-child(1) { transition-delay: .1s; }
-    #menu-wrapper.show-menu .items a:nth-child(2) { transition-delay: .2s; }
-    #menu-wrapper.show-menu .items a:nth-child(3) { transition-delay: .3s; }
+    #menu-wrapper.show-menu .items a:nth-child(3) { transition-delay: .2s; }
+    #menu-wrapper.show-menu .items a:nth-child(5) { transition-delay: .3s; }
 
         #menu-wrapper .items a {
             transform: translate(-75px, 750px);
@@ -224,12 +238,25 @@ table td {
         position: relative;
     }
 
-    .close-menu {
-        position: absolute;
-        top: -10px;
-        right: 0px;
-        cursor: pointer;
+    .menu .items > ul {
+        list-style: none;
+        padding: 0 0 0 40px;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height .3s;
+        font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
+
+        .menu .items > ul.show {
+            max-height: 150px;
+        }
+
+.close-menu {
+    position: absolute;
+    top: -10px;
+    right: 0px;
+    cursor: pointer;
+}
 
 .content-wrapper {
     transform: translateX(0px);

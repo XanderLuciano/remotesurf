@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -21,7 +21,6 @@
 
     <!-- Page Content -->
     <div class="content-wrapper">
-        <div id="menu-button" onclick="toggleMenu()"></div>
         <section class="intro">
             <div class="intro-body">
                 <div class="container">
@@ -29,50 +28,51 @@
                         <div class="col-md-12">
                             <h1 class="brand-heading">RemoteSurf Web</h1>
                             <h3>
-                            <span>Select Device:
-                                <select id="device" onchange="DeviceChanged()">
-                                    <option value="0">0 - Mouse</option>
-                                    <option value="1">1 - Other</option>
-                                </select>
-                            </span>
+                                <span>
+                                    Select Device:
+                                    <select id="device" onchange="DeviceChanged()">
+                                        <option value="0">0 - Mouse</option>
+                                        <option value="1">1 - Other</option>
+                                    </select>
+                                </span>
                             </h3>
                             <p>
-                            <table class="table">
-                                <thead>
-                                <tr>
-                                    <th></th>
-                                    <th>Nominal</th>
-                                    <th>Measured</th>
-                                    <th>Deviation</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td>X</td>
-                                    <td id="x_nominal">0</td>
-                                    <td id="x_measured">0</td>
-                                    <td id="x_deviation">0</td>
-                                </tr>
-                                <tr>
-                                    <td>Y</td>
-                                    <td id="y_nominal">0</td>
-                                    <td id="y_measured">0</td>
-                                    <td id="y_deviation">0</td>
-                                </tr>
-                                <tr>
-                                    <td>Z</td>
-                                    <td id="z_nominal">0</td>
-                                    <td id="z_measured">0</td>
-                                    <td id="z_deviation">0</td>
-                                </tr>
-                                <tr>
-                                    <td>3D</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td id="d3_measured">0</td>
-                                </tr>
-                                </tbody>
-                            </table>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>Nominal</th>
+                                            <th>Measured</th>
+                                            <th>Deviation</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>X</td>
+                                            <td id="x_nominal">0</td>
+                                            <td id="x_measured">0</td>
+                                            <td id="x_deviation">0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Y</td>
+                                            <td id="y_nominal">0</td>
+                                            <td id="y_measured">0</td>
+                                            <td id="y_deviation">0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Z</td>
+                                            <td id="z_nominal">0</td>
+                                            <td id="z_measured">0</td>
+                                            <td id="z_deviation">0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3D</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td id="d3_measured">0</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </p>
                         </div>
                     </div>
@@ -81,14 +81,32 @@
         </section>
     </div>
 
+    <div id="menu-button" onclick="toggleMenu()"></div>
+
     <!-- Off canvas menu -->
     <div id="menu-wrapper">
         <nav class="menu">
             <div class="close-menu" onclick="toggleMenu()"><i class="fa fa-times"></i></div>
             <div class="items">
-                <a href="#" id="measure"><i class="fa fa-fw fa-crosshairs"></i><span> Measure </span></a>
-                <a href="#" id="CADView"><i class="fa fa-fw fa-cube"></i><span> CAD View </span></a>
-                <a href="#" id="device"><i class="fa fa-fw fa-cog"></i><span> Settings </span></a>
+                <a href="#" id="measure"><i class="fa fa-fw fa-crosshairs"></i><span> Measure </span><i class="fa fa-fw fa-chevron-up rotate"></i></a>
+                <ul class="measure-menu">
+                    <li onclick="sendCommand('build')"><a href="#"><i class="fa fa-crosshairs"></i> Build </a></li>
+                    <li onclick="sendCommand('measure_point')"><a href="#"><i class="fa fa-circle"></i> Point </a></li>
+                    <li onclick="sendCommand('measure_line')"><a href="#"><i class="fa fa-angle-right"></i> Line </a></li>
+                    <li onclick="sendCommand('measure_circle')"><a href="#"><i class="fa fa-angle-right"></i> Cirlce </a></li>
+                </ul>
+                <a href="#" id="cadview"><i class="fa fa-fw fa-cube"></i><span> CAD View </span><i class="fa fa-fw fa-chevron-up rotate"></i></a>
+                <ul class="cadview-menu">
+                    <li onclick="sendCommand('cadview_iso')"><a href="#"><i class="fa fa-cube"></i> ISO </a></li>
+                    <li onclick="sendCommand('cadview_front')"><a href="#"><i class="fa fa-angle-right"></i> Front </a></li>
+                    <li onclick="sendCommand('cadview_top')"><a href="#"><i class="fa fa-angle-right"></i> Top </a></li>
+                    <li onclick="sendCommand('cadview_right')"><a href="#"><i class="fa fa-angle-right"></i> Right </a></li>
+                </ul>
+                <a href="#" id="settings"><i class="fa fa-fw fa-cog"></i><span> Settings </span><i class="fa fa-fw fa-chevron-up rotate"></i></a>
+                <ul class="settings-menu">
+                    <li><a href="#"><i class="fa fa-check-square-o"></i> Toggle Background </a></li>
+                    <li><a href="#"><i class="fa fa-exchange"></i> Change Device </a></li>
+                </ul>
             </div>
         </nav>
     </div>
@@ -96,13 +114,13 @@
     <!-- floating buttons -->
     <div id="fullscreen" onclick="toggleFullScreen(); winform.toggleFullScreen(); "></div>
 
-<!-- Core JavaScript Files -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-<!-- Font Awesome -->
-<script src="https://use.fontawesome.com/d665a94f5a.js"></script>
-<!-- JavaScript Files -->
-<script src="main.js"></script>
-<script src="verisurf-api.js"></script>
+    <!-- Core JavaScript Files -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/d665a94f5a.js"></script>
+    <!-- JavaScript Files -->
+    <script src="main.js"></script>
+    <script src="verisurf-api.js"></script>
 </body>
 </html>
