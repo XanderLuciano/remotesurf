@@ -25,7 +25,7 @@ namespace RemoteSurf
 
         public void InitBrowser()
         {
-            Cef.Initialize(new CefSettings());
+            //Cef.Initialize(new CefSettings());
             browser = new ChromiumWebBrowser(@"file:///resources/html/index.html");
             this.Controls.Add(browser);
             browser.BringToFront();
