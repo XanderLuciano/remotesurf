@@ -20,19 +20,14 @@ namespace RemoteSurf
         [STAThread]
         static void Main()
         {
-            lib = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"cefsharp\libcef.dll");
-            browser = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"cefsharp\CefSharp.BrowserSubprocess.exe");
-            locales = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"cefsharp\locales\");
-            res = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"cefsharp\");
-            Console.WriteLine($"lib: {lib}");
-            Console.WriteLine($"browser: {browser}");
-            Console.WriteLine($"locales: {locales}");
-            Console.WriteLine($"res: {res}");
-
-            AppDomain.CurrentDomain.AssemblyResolve += Resolver;
+            lib = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"resources\cefsharp\libcef.dll");
+            browser = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"resources\cefsharp\CefSharp.BrowserSubprocess.exe");
+            locales = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"resources\cefsharp\locales\");
+            res = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"resources\cefsharp\");
 
             var libraryLoader = new CefLibraryHandle(lib);
-            var isValid = libraryLoader.IsInvalid;
+            var isValid = !libraryLoader.IsInvalid;
+            Console.WriteLine($"Library is valid: {isValid}");
 
             LoadForm();
 
@@ -48,28 +43,10 @@ namespace RemoteSurf
             settings.ResourcesDirPath = res;
 
             Cef.Initialize(settings, shutdownOnProcessExit: false, performDependencyCheck: false);
-            
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new RemoteSurfWebForm());
-        }
-
-        private static Assembly Resolver(object sender, ResolveEventArgs args)
-        {
-            if (args.Name.StartsWith("CefSharp"))
-            {
-                string assemblyName = args.Name.Split(new[] { ',' }, 2)[0] + ".dll";
-                string archSpecificPath = Path.Combine(AppDomain.CurrentDomain.SetupInformation.ApplicationBase,
-                                                       "cefsharp",
-                                                       assemblyName);
-                Console.WriteLine($"Path: {archSpecificPath}");
-
-                return File.Exists(archSpecificPath)
-                           ? Assembly.LoadFile(archSpecificPath)
-                           : null;
-            }
-
-            return null;
         }
     }
 }
