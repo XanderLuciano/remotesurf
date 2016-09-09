@@ -39,6 +39,7 @@ function toggleMenu() {
 // Toggle background image
 toggleBg.click(function () {
     body.toggleClass("no-image");
+    toggleBg.find("i").toggleClass("fa-square-o fa-check-square-o");
 });
 
 function toggleFullScreen() {
