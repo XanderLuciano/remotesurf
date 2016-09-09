@@ -1,5 +1,5 @@
 // The intervalrate in ms
-var refreshRate = 250;
+var refreshRate = 25;
 
 // This can be toggled in the console to output debug info
 var debug = false;
@@ -15,7 +15,8 @@ var verisurf_d3 = $("#d3_measured");
 var verisurf_px = $("#x_nominal");
 var verisurf_py = $("#y_nominal");
 var verisurf_pz = $("#z_nominal");
-var device = $("#device");
+
+var refreshInput = $("#refresh-input");
 
 // other variables
 var deviceID = 0;
@@ -23,12 +24,21 @@ var websocket;
 var timer;
 
 // Function called when dropdown is changed
-function DeviceChanged() {
-    deviceID = device.val();
-}
 function setDevice(id) {
     deviceID = id;
 }
+
+// Updates refresh rate
+refreshInput.keyup(function () {
+    var value = parseInt(this.value);
+    if (isNaN(value) && this.value != "")
+        refreshInput.css("color", "#F44336");
+    else
+        refreshInput.css("color", "white");
+
+    refreshRate = value;
+    console.log(refreshRate);
+});
 
 function sendCommand(command) {
     websocket.send("<" + command + " />\n");
@@ -38,6 +48,8 @@ function sendCommand(command) {
 // Sends command to retrieve current device info
 function socketTimerCallback() {
     websocket.send("<device_info id='" + deviceID + "' />\n");
+    console.log("fire");
+    setTimeout(socketTimerCallback, refreshRate);
 }
 
 // Checks if the current value is zero or null
@@ -53,9 +65,7 @@ $(function () {
 
     websocket.onopen = function (event) {
         websocket.send("<device_list />\n");
-        timer = setInterval(function () {
-            socketTimerCallback();
-        }, refreshRate);
+        timer = setTimeout(socketTimerCallback, refreshRate);
     };
 
     websocket.onmessage = function (event) {
@@ -81,7 +91,7 @@ $(function () {
         if (deviceList.length > 0) {
             var devices = deviceList[0].getElementsByTagName("device");
             for (var i = 0; i < devices.length; i++) {
-                var elem = $("#settings-menu").children().eq(i + 2);
+                var elem = $("#settings-menu").children().eq(i + 3);
                 console.log(elem);
                 var name = devices[i].getAttribute("name");
                 if (name == "")

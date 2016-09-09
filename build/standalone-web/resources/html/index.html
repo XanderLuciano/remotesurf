@@ -103,7 +103,11 @@
                 <div class="menu-item settings">
                     <a href="#" id="settings-button" class="menu-button"><i class="fa fa-fw fa-cog"></i><span> Settings </span><i class="fa fa-fw fa-chevron-up rotate"></i></a>
                     <ul id="settings-menu" class="sub-menu">
-                        <li><a href="#" id="toggle-background"><i class="fa fa-check-square-o"></i> Toggle Background </a></li>
+                        <li>
+                            <a id="refresh-rate" style="display:inline;"><i id="refresh-rate-icon" class="fa fa-clock-o" aria-hidden="true"></i> Polling Rate: </a>
+                            <input id="refresh-input" type="number" min="1" max="1000" value="25">
+                        </li>
+                        <li><a href="#" id="toggle-background"><i class="fa fa-check-square-o"></i> Show Background </a></li>
                         <li><a href="#" id="refresh-button"><i id="refresh-icon" class="fa fa-refresh"></i> Refresh Devices </a></li>
                         <li><a href="#" onclick="setDevice(0)"><i class="fa fa-exchange"></i> Mouse </a></li>
                         <li><a href="#" onclick="setDevice(1)"><i class="fa fa-exchange"></i> Master 3D Gage </a></li>
