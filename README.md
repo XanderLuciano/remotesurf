@@ -2,7 +2,7 @@
 
 Basic Example Programs for the Verisurf API written in C#
 
-Latest Version: [v1.1 - 2016.09.08][dl]
+Latest Version: [v1.2 - 2016.09.09][dl]
 
 ---
 
